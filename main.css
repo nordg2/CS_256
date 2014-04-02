@@ -6,6 +6,10 @@
   background-color: #6699CC; 
 }
 
+.shadow {
+  box-shadow: 4px 4px 5px #888888;
+}
+
 h2 {
   color: #6699CC;
   
