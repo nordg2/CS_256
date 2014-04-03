@@ -25,7 +25,10 @@
                 <div class="question shadow">
                     <p>this is my sincere question? kjsljksfdjk lljk sfjk ljkl jkl sdj klsdfjk lsdfj kl sjfkl jklsfdjkl sdfjk lsdfjkl sdf ljkdsfjklfsdjklsfdjkl sfdjkl dfsj kljksdfl ljk sfd</p>
                 </div>
-                <button id="submit">Submit</button>
+                <div class="ask-question shadow"><textarea id="question"></textarea></div>
+                <div class="ask-question shadow"><textarea id="answer"></textarea></div>
+                <button id="submit" class="submit shadow">Submit</button>
+                <button id="add-file" class="add-file shadow"> + File</button>
             </div>
         </div>
     </body>

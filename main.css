@@ -77,6 +77,34 @@ h2 {
   font-size: 1.75em;
 }
 
+.submit {
+   color: white;
+   background-color: #6699CC;
+   border: none;
+   border-radius: 5px;
+   width: 90px;
+   height: 30px;
+   float: right;
+   margin: 0 1em 0 0;
+   font-size: 1em;
+}
+.ask-question {
+    margin: 1em;
+    height: 250px;
+    background-color: white;
+}
+.add-file {
+   color: black;
+   background-color: white;
+   border: #6699CC solid 1px;
+   border-radius: 5px;
+   width: 90px;
+   height: 30px;
+   float: right;
+   margin: 0 1em 0 0;
+   font-size: 1em;
+}
+
 
 * {
   font-family: 'century gothic' 'helvetica'; 
