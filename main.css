@@ -13,19 +13,33 @@
 .border {
     border: 1px solid black;
 }
-#header {
+.header {
     width: 100%;
-    height: 50px;
+    height: 60px;
+}
+
+#home {
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+#signout {
+    float: right;
+}
+#title {
+    font-size: 2em;
+    text-align: center;
 }
 #left-panel {
-    width: 59.5%;
+    width: 640px;
     border-right: 1px solid black;
     float: left;
     display:table-column;
     height: 800px;
+    margin-left: -10px
 }
 #right-panel {
-    width: 40%;
+    width: 50%;
     float: right;
     display:table-column;
     height: 800px;
@@ -54,10 +68,15 @@ p {
     height: 30px;
 }
 
-h2 {
-  color: #6699CC;
-  
+h1 {
+    color:#6699CC;
+    font-size: 2em;
 }
+h2 {
+  color: #4477AA;
+  font-size: 1.75em;
+}
+
 
 * {
   font-family: 'century gothic' 'helvetica'; 
