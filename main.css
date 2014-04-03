@@ -77,6 +77,10 @@ h2 {
   font-size: 1.75em;
 }
 
+a {
+  color:#6699CC;
+}
+
 .submit {
    color: white;
    background-color: #6699CC;
@@ -103,6 +107,41 @@ h2 {
    float: right;
    margin: 0 1em 0 0;
    font-size: 1em;
+}
+
+.button {
+  color:white;
+  border:3px solid #03356b;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.button-login {
+  width:55px;
+}
+
+.button-blue {
+  background-color: #03356b;;
+}
+
+.button:active {
+
+}
+
+.button:hover {
+
+}
+
+.inputbox {
+  border:1px;
+  border-left-color: #000000;
+  border-top-color: #000000;
+  height:40px;
+
 }
 
 
