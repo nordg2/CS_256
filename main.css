@@ -124,6 +124,14 @@ a {
   width:55px;
 }
 
+.button-register {
+  width:80px;
+}
+
+.button-password {
+  width:200px;
+}
+
 .button-blue {
   background-color: #03356b;;
 }
@@ -144,6 +152,10 @@ a {
 
 }
 
+.tile {
+  background-color: white;
+  width:200px;
+}
 
 * {
   font-family: 'century gothic' 'helvetica'; 
