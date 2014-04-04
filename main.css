@@ -9,7 +9,13 @@
 .background-grey {
     background-color: #D7D7D7;
 }
-
+.text-field {
+    width: 90.5%;
+    font-size: 1.5em;
+    margin: 0 1em 1em 1em;
+    margin-bottom: 0;
+    height: 160px;
+}
 .border {
     border: 1px solid black;
 }
@@ -56,7 +62,12 @@
     height: 80px;
     
 }
-
+.question-header {
+    height: 1em;
+    vertical-align: auto;
+    font-weight: bold;
+    padding-top: 1em;
+}
 p {
     height: 80px;
     display: table-cell;
@@ -64,8 +75,11 @@ p {
     vertical-align: middle;
 }
 .search {
-    width: 100%;
+    margin-left: .69em; 
+    margin-right: 0m;
+    width: 94%;
     height: 30px;
+    font-size: 1.5em;
 }
 
 h1 {
@@ -75,6 +89,9 @@ h1 {
 h2 {
   color: #4477AA;
   font-size: 1.75em;
+}
+.teacher-comments {
+    padding: 0 2em 2em 2em;
 }
 
 a {
@@ -89,7 +106,7 @@ a {
    width: 90px;
    height: 30px;
    float: right;
-   margin: 0 1em 0 0;
+   margin: 0 1.6em 0 0;
    font-size: 1em;
 }
 .ask-question {
