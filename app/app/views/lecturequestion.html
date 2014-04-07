@@ -1,0 +1,41 @@
+<div class="notexpanded panelside videoside">
+    <div class="header">
+        <a href="#/lecturelist"><img id="home" style="cursor: pointer;" src="images/home.png"/></a>
+        <div id="title" class="title" html-ellipsis>The Molecular Structure of Sugar</div>
+    </div>
+    <div class="video-container">
+        <iframe id="ytplayer" style="width:100;" type="text/html"  src="http://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com" frameborder="0"></iframe>
+    </div>
+    <div style="padding-top: 2em; padding-left: 1em; font-weight: bold;">Teacher comments:</div>
+    <div class='teacher-comments'>
+        This is the section with all the teacher's comments. They can be really lengthy and boring, and they may run out of things to say before it really gets interesting. By that time no one will be reading the comments anymore except Brendon who will be the only one to ge this far in reading this stupid ridiculous line. Hopefully you are laughing now because this is insanely long....
+    </div>
+</div>
+<div class="expanded linkside panelside">
+    <img src="images/backarrow.png" class="backarrow" data-ng-click="gotoVideo()"/>
+    <!-- search bar -->
+    <div class="questionbox">
+        This should be the question you clicked on, does it answer the question you ahad or do you need help?
+    </div>
+    <ul>
+        <li data-ng-repeat="answer in answers | filter:answerfilter"
+            class=" shadow answertile"
+            data-ng-click="gotoQuestion()"
+                >
+            <div class="floatleft">
+                <img src="images/upthumb.png" class="thumb">
+                <img src="images/downthumb.png" class="thumb">
+            </div>
+            <div>
+                <b>{{answer.user}}</b>
+                <p>{{answer.answer}}</p>
+            </div>
+
+        </li>
+    </ul>
+    <form>
+        <textarea data-ng-model="newanswer" />
+        <button class="button-blue button floatright">+File</button>
+        <button class="button-blue button floatright" data-ng-click="submitanswer(newanswer)">Submit</button>
+    </form>
+</div>

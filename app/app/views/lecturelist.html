@@ -1,0 +1,15 @@
+<div class="lectureContainer">
+    <div class="whitebox courselist">
+        <h2>Course Title</h2>
+        <input type="text" placeholder="Filter by Name" data-ng-model="coursefilter"/>
+        <ul>
+            <li class="answertile shadow lecturetile" data-ng-repeat="lecture in lectures | filter:coursefilter" data-ng-click="gotoLecture()">{{lecture.title}}</li>
+        </ul>
+    </div>
+    <div class="popular">
+        <h3>Popular</h3>
+        <ul>
+            <li class="answertile shadow lecturetile" data-ng-repeat="lecture in popular | filter:coursefilter" data-ng-click="gotoLecture()">{{lecture.title}}<div class="activeviewers">{{lecture.viewers}} Active Viewers</div></li>
+        </ul>
+    </div>
+</div>
