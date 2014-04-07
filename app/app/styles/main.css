@@ -61,16 +61,26 @@ button{
 .floatright{
     float:right;
 }
-.popular{
+.courselist{
+    width:45%;
     float:left;
     margin:100px auto 100px 50px;
+}
+.popular{
+    width:35%;
+    padding-top:35px;
+    float:left;
+    margin:100px auto 100px 50px;
+}
+.activeviewers{
+    font-size: 12px;
 }
 .centered{
     margin-top: 20px;
     text-align: center;
 }
 .lectureContainer{
-    width:700px;
+    width:900px;
     margin: 0 auto 0 auto;
 }
 .expanded{
@@ -125,6 +135,13 @@ ul{
     font-size: 12px;
     background-color: white;
 }
+.lecturetile{
+    font-size: 16px;
+    background-image: url("../images/rightarrow.png");
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+
 
 .video-container iframe,
 .video-container object,
@@ -143,11 +160,33 @@ ul{
     margin: 35px 0 10px 0;
 background:white;
 }
+.title{
+    width:100%;
+    height:50px;
+}
+.backarrow{
+    position: absolute;
+    top:5px;
+}
+.addquestion{
+    position:absolute;
+    top:0px;
+    right:5px;
+    width:50px;
+}
+.newquestion{
+    margin: 35px 0 10px 0;
 
+}
+.thumb{
 
-
-
-
+    margin-top: 15px;
+}
+.thumb:hover{
+    opacity:0.4;
+    filter:alpha(opacity=40); /* For IE8 and earlier */
+    cursor: pointer;
+}
 
 
 
