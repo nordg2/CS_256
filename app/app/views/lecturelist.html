@@ -9,7 +9,7 @@
     <div class="popular">
         <h3>Popular</h3>
         <ul>
-            <li class="answertile shadow lecturetile" data-ng-repeat="lecture in popular | filter:coursefilter" data-ng-click="gotoLecture()">{{lecture.title}}<div class="activeviewers">{{lecture.viewers}} Active Viewers</div></li>
+            <li class="answertile shadow lecturetile" data-ng-repeat="lecture in popular" data-ng-click="gotoLecture()">{{lecture.title}}<div class="activeviewers">{{lecture.viewers}} Active Viewers</div></li>
         </ul>
     </div>
 </div>

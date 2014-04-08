@@ -35,6 +35,20 @@ input{
     -moz-box-shadow: 4px 4px 5px #888888;
     -webkit-box-shadow: 4px 4px 5px #888888;
 }
+select{
+    border:1px;
+    border-left-color: #000000;
+    border-top-color: #000000;
+    height:50px;
+    font-size: 24px;
+    width:100%;
+    padding:0 0 0 15px;
+    margin: 0 0 20px 0;
+
+    box-shadow: 4px 4px 5px #888888;
+    -moz-box-shadow: 4px 4px 5px #888888;
+    -webkit-box-shadow: 4px 4px 5px #888888;
+}
 button{
     color:white;
     border:3px solid #03356b;
@@ -68,7 +82,7 @@ button{
 }
 .popular{
     width:35%;
-    padding-top:35px;
+    padding-top:45px;
     float:left;
     margin:100px auto 100px 50px;
 }
@@ -86,8 +100,10 @@ button{
 .expanded{
     width:65%;
 }
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 .notexpanded{
     width:30%;
+
 }
 .panelside{
     float:left;
@@ -115,6 +131,7 @@ ul{
     list-style-position:inside;
     padding:0px;
     list-style:none;
+    width:100%;
 }
 .questiontile{
     list-style: none inside;
@@ -124,7 +141,8 @@ ul{
     padding:15px;
     font-size: 16px;
     background-color: white;
-    max-width: 300px;
+    max-height: 75px;
+    overflow: hidden;
 }
 .answertile{
     list-style: none inside;
@@ -135,13 +153,21 @@ ul{
     font-size: 12px;
     background-color: white;
 }
+.questiontile:hover, .answertile:hover{
+    background-color: #e2ebf4;
+    cursor: pointer;
+}
 .lecturetile{
     font-size: 16px;
     background-image: url("../images/rightarrow.png");
     background-repeat: no-repeat;
     background-position: 95% center;
 }
-
+.newfile{
+    color:#03356b !important;
+    background-color: white !important;
+    border: solid #03356b thin !important;
+}
 
 .video-container iframe,
 .video-container object,
@@ -180,7 +206,7 @@ background:white;
 }
 .thumb{
 
-    margin-top: 15px;
+    margin-top: 0px;
 }
 .thumb:hover{
     opacity:0.4;
@@ -217,11 +243,16 @@ background:white;
     width: 100%;
     height: 60px;
 }
-
+.searchbox{
+    padding-right:50px;
+}
 #home {
     width: 40px;
     height: 40px;
     float: left;
+}
+#home:hover{
+    opacity: .4;
 }
 #signout {
     float: right;
@@ -272,6 +303,7 @@ h1 {
 }
 h2 {
     color: #4477AA;
+    margin-bottom:35px;
     font-size: 1.75em;
 }
 .teacher-comments {

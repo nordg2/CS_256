@@ -4,7 +4,7 @@
             <div id="title" class="title" html-ellipsis>The Molecular Structure of Sugar</div>
         </div>
         <div class="video-container">
-            <iframe id="ytplayer" style="width:100;" type="text/html"  src="http://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com" frameborder="0"></iframe>
+            <iframe id="ytplayer" style="width:100;" type="text/html"  src="//www.youtube.com/embed/8Hsr3jktbzA" frameborder="0"></iframe>
         </div>
         <div style="padding-top: 2em; padding-left: 1em; font-weight: bold;">Teacher comments:</div>
         <div class='teacher-comments'>
@@ -14,13 +14,14 @@
     <div class="notexpanded linkside panelside">
         <!-- search bar -->
         <div style="position:relative;">
-            <input type="text" placeholder="Search..." ng-model="questionFilter"/>
+            <input type="text" placeholder="Search..." ng-model="questionFilter" class="searchbox"/>
             <img src="images/add_question.png" class="addquestion" data-ng-click="addNewQuestion(questionFilter)" />
         </div>
         <ul>
             <li data-ng-repeat="question in questions | filter:questionFilter"
                 class=" shadow questiontile"
                 data-ng-click="gotoQuestion()"
+                html-ellipsis
                     >
                 {{question.question}}
             </li>
